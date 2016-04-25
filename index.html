@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <script src="jquery-2.1.4.min.js"></script>
+    <style>
+        
+    * {padding: 0 0;}
+    
+    body, button {
+        font-family: Georgia;
+        font-size: larger;
+    }
+    
+    .sm-button {
+        font-size: smaller;
+    }
+    
+    .del-img {
+        height: 40px;
+    }
+    
+    input {
+        font-size: large;
+    }
+    
+    button {
+        vertical-align: bottom;
+    }
+    
+    #circle {
+        height: 2em;
+    }
+    
+    #timer {
+        font-family: Arial;
+        font-size: 4em;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #dfdff0;
+    }
+    
+    td, th {
+        text-align: center;
+        font-family: Georgia;
+        padding: 2px 10px;
+    }
+    
+    table {
+        cellspacing: 0;
+        border-collapse: collapse;
+    }
+    
+        </style>
+</head>
+
+<body>
+    <br><br><br><br>
+    <center>
+    
+    <div id="main-view">
+    <div>
+            <span id="timer">00:00</span><br><br>
+            <p>Filename ID  <input maxlength="7" align="middle" id="file-id"></input></p>
+            <br>
+            <img id="circle" src="gcir.jpg">&nbsp;
+            <button id="record">Record</button>
+            <button id="stop">Stop</button>
+    </div>
+        <br>
+        <br>
+    
+    <table id="files" style="display:none">
+        <tr><td><b>Email GPX File</b></td></tr>
+    </table>
+    
+    </center>
+    </div>
+    
+    <script src="ui.js"></script>
+    
+</body>
+
+</html>
